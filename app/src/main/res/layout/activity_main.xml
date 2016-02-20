@@ -7,10 +7,57 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="oleg.hubal.com.tm_homework03.MainActivity">
+    tools:context="oleg.hubal.com.test.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="@string/tv_help"
+        android:id="@+id/tv_help"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/field_textSize"
+        />
+    <EditText
+        android:id="@+id/edt_value_a"
+        android:layout_width="@dimen/field_width"
+        android:layout_height="@dimen/field_height"
+        android:gravity="center"
+        android:layout_below="@+id/tv_help"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/view_vertical_margin"
+        />
+    <Button
+        android:id="@+id/btn_sum"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:text="@string/btn_sum"
+        android:layout_marginLeft="@dimen/view_horizontal_margin"
+        android:layout_below="@+id/edt_value_a"
+        android:layout_marginTop="@dimen/view_vertical_margin"/>
+    <Button
+        android:id="@+id/btn_dif"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_below="@id/edt_value_a"
+        android:layout_marginTop="@dimen/view_vertical_margin"
+        android:text="@string/btn_dif"
+        android:layout_marginRight="@dimen/view_horizontal_margin"
+        android:layout_alignParentRight="true"/>
+    <EditText
+        android:id="@+id/edt_value_b"
+        android:layout_width="@dimen/field_width"
+        android:layout_height="@dimen/field_height"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_dif"
+        android:layout_marginTop="@dimen/view_vertical_margin"/>
+    <TextView
+        android:id="@+id/tv_ans"
+        android:layout_width="@dimen/field_width"
+        android:layout_height="@dimen/field_height"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edt_value_b"
+        android:layout_marginTop="@dimen/view_vertical_margin"
+        />
+
 </RelativeLayout>
