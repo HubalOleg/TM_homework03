@@ -16,37 +16,37 @@
         android:text="@string/tv_help"
         android:id="@+id/tv_help"
         android:layout_centerHorizontal="true"
+        android:textSize="@dimen/field_textSize"
         />
     <EditText
-        style="@style/FieldTheme"
+        style="@style/FieldThemeLand"
         android:id="@+id/edt_value_a"
         android:layout_below="@+id/tv_help"
-        android:layout_centerHorizontal="true"
         />
     <Button
-        style="@style/ButtonTheme"
+        style="@style/ButtonThemeLand"
         android:id="@+id/btn_sum"
         android:text="@string/btn_sum"
         android:layout_marginLeft="@dimen/view_horizontal_margin"
-        android:layout_below="@+id/edt_value_a" />
+        android:layout_below="@+id/edt_value_a"/>
     <Button
-        style="@style/ButtonTheme"
+        style="@style/ButtonThemeLand"
         android:id="@+id/btn_dif"
         android:layout_below="@id/edt_value_a"
         android:text="@string/btn_dif"
         android:layout_marginRight="@dimen/view_horizontal_margin"
         android:layout_alignParentRight="true"/>
     <EditText
-        style="@style/FieldTheme"
+        style="@style/FieldThemeLand"
         android:id="@+id/edt_value_b"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/btn_dif"/>
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_help"/>
     <TextView
-        style="@style/FieldTheme"
+        style="@style/FieldThemeLand"
+        android:textSize="20sp"
         android:id="@+id/tv_ans"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/edt_value_b"
-        android:textSize="20sp"
+        android:layout_below="@id/btn_sum"
         />
 
 </RelativeLayout>
